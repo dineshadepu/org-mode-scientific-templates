@@ -1,0 +1,133 @@
+#+LaTeX_CLASS: asme2ej
+#+LaTeX_CLASS_OPTIONS: [twocolumn, 10pt]
+# #+LaTeX_CLASS_OPTIONS: [margin=0.1in]
+#+OPTIONS: toc:nil
+#+OPTIONS: author:nil date:nil title:nil
+#+LATEX_HEADER: \usepackage{epsfig}
+#+LATEX_HEADER: \begin{document}
+#+LATEX_HEADER: \title{An ASME Journal Article Created Using \LaTeX2\raisebox{-.3ex}{$\epsilon$} in ASME Format for Testing Your Figures}
+#+LATEX_HEADER: \author{Harry H. Cheng \affiliation{Professor, Fellow of ASME\\ Integration Engineering Laboratory\\ Department of Mechanical Engineering\\ University of California\\ Davis, California 95616\\ Email: hhcheng@ucdavis.edu}}
+#+LATEX_HEADER: \author{J. Michael McCarthy\thanks{Address all correspondence related to ASME style format and figures to this author.} \\ \affiliation{ Editor, Fellow of ASME\\ Journal of Mechanical Design\\ Email: jmmccart@uci.edu}}
+#+LATEX_HEADER: \author{Third Co-author\\ Graduate Research Assistan, Student Member of ASME\\ {\tensfb Fourth Co-author}\thanks{Address all correspondence for other issues to this author.} \affiliation{Title, Member of ASME\\ Department or Division Name\\ Company or College Name\\ City, State (spelled out), Zip Code\\ Country (only if not U.S.)\\ Email address (if available)}}
+#+LATEX_HEADER: \maketitle
+
+#+LATEX_HEADER: \renewcommand\maketitle{}
+
+
+\begin{abstract}
+\it{This is the abstract.
+This article illustrates preparation of ASME paper using
+\LaTeX2\raisebox{-.3ex}{$\epsilon$}.
+An abstract for an ASME paper should be less than 150 words and is normally in italics.
+Please use this template to test how your figures will look on the printed journal
+page of the Journal of Mechanical Design. The Journal will no longer publish papers
+that contain errors in figure resolution. These usually consist of
+unreadable or fuzzy text, and pixilation or rasterization of lines.
+This template identifies the specifications used by JMD some of which
+may not be easily duplicated; for example, ASME actually uses
+Helvetica Condensed Bold, but this is not generally available so for
+the purpose of this exercise Helvetica is adequate.  However,
+reproduction of the journal page is not the goal, instead this
+exercise is to verify the quality of your figures. Notice that this
+abstract is to be set in 9pt Times Italic, single spaced and right
+justified.}
+\end{abstract}
+
+\begin{nomenclature}
+\entry{A}{You may include nomenclature here.}
+\entry{$\alpha$}{There are two arguments for each entry of the nomemclature environment, the symbol and the definition.}
+\end{nomenclature}
+
+
+
+** Introduction
+  label:Introduction
+
+This article illustrates preparation of ASME paper using
+\LaTeX2\raisebox{-.3ex}{$\epsilon$}. The \LaTeX\ macro
+available on the WWW at the URL address
+2003 ASME MS4 style guidelines \cite{asmemanual}, you should modify
+typesetting this file and the \LaTeX2\raisebox{-.3ex}{$\epsilon$}
+source file, you should find everything you need to help you through
+the preparation of ASME paper using
+\LaTeX2\raisebox{-.3ex}{$\epsilon$}. Details on using \LaTeX\ can be
+found in \cite{latex}.
+
+In order to get started in generating a two-column version of your
+paper, please format the document with 0.75in top margin, 1.5in bottom
+margin and 0.825in left and right margins.  Break the text into two
+sections one for the title heading, and another for the body of the
+paper.
+
+The format of the heading is not critical, on the other hand
+formatting of the body of the text is the primary goal of this
+exercise.  This will allow you to see that the figures are matched to
+the column width and font size of the paper.  The double column of the
+heading section is set to 1.85in for the first column, a 0.5in
+spacing, and 4.5in for the second column.  For the body of the paper,
+set it to 3.34in for both columns with 0.17in spacing, both are right
+justified.
+
+The information that is the focus of this exercise is found in
+section.  Please use this template to format your
+paper in a way that is similar to the printed form of the Journal of
+Mechanical Design.  This will allow you to verify that the size and
+resolution of your figures match the page layout of the journal.  The
+ASME Journal of Mechanical Design will no longer publish papers that
+have the errors demonstrated here.
+
+ASME simply requires that the font should be the appropriate size and
+not be blurred or pixilated, and that lines should be the appropriate
+weight and have minimal, preferably no, pixilation or rasterization.
+
+The journal uses 10pt Times Roman Bold for headings, but Times Bold is
+good enough for this effort.  The text is set at 9pt Times Roman, and
+again Times will be fine.  Insert a new line after the heading, and
+two lines after each section.  This is not exactly right but it is
+close enough.
+
+
+*** Sub section
+label:subsec:1.1
+The journal uses 10pt Times Roman Bold for headings, but Times Bold is
+good enough for this effort.  The text is set at 9pt Times Roman, and
+again Times will be fine.  Insert a new line after the heading, and
+two lines after each section.  This is not exactly right but it is
+close enough.
+
+
+* Usage of org mode
+  label:sec:org-mode It's easy to cite in papers from the given bibtex
+  file. For example the following paper is cites by its name as
+  cite:ihmsen-2014-implic-incom-sph.  Where as using the year of
+  publication cite:ihmsen-2014-implic-incom-sph.
+
+  Referring a section is similarly very simple to do, as section on
+  org mode usage is done in various ways as follows, ref:sec:org-mode,
+  nameref:sec:org-mode.
+
+ bibliography:./references.bib
+ bibliographystyle:asmems4
+
+#+LATEX_HEADER: \appendix
+
+* Appendix A: Head of First Appendix
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+  Avoid Appendices if possible.
+
+** Appendix B: Head of Second Appendix
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+
+** Subsection head in appendix
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+  The equation counter is not reset in an appendix and the numbers will
+  follow one continual sequence from the beginning of the article to the very end as shown in the following example.
+  \begin{equation}
+  a = b + c.
+  \end{equation}
