@@ -1,0 +1,4 @@
+* Description
+  In the following project, org mode templates for several scientific papers will be published.
+
+  [x] ASME
